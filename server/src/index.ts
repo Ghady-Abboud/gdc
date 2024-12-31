@@ -85,7 +85,7 @@ app.get("/dashboard", VerifyToken, async (req: Request, res: Response) => {
       const { data, error } = await supabase.storage
         .from(`user-files`)
         .list(`${user_id}/${username}`);
-      res.status(200).json({ data, username});
+      res.status(200).json({ data, username });
     } catch (err) {
       res.status(400).json({ Error: err });
     }

@@ -68,7 +68,7 @@ const SharedWithMe = () => {
           />
         </div>
       </section>
-      <section className="text-tablefontcolor py-2">
+      <section className="text-fontcolor py-2">
         <FileTable data={data} username={`${username}`} />
       </section>
     </div>

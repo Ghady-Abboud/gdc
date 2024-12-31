@@ -1,3 +1,3 @@
 ###
 
-Create upload button and trash button, also create storage for trash to add restore trash option
+Run "./start.sh" in the root dir of project to run app start script
