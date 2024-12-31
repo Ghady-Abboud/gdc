@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #131212;
+  --fontcolor: #f0eff7;
+  --tablefontcolor: #0f0f0f;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--fontcolor);
+  font-family: Poppins, sans-serif;
+}
