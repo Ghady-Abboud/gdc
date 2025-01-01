@@ -18,10 +18,11 @@ const FileTable = ({ data, username }: TableProps) => {
     <>
       {/* TABLE HEADER */}
       <div className="grid grid-cols-4 gap-2 px-6 py-3 bg-black-50 rounded-t-xl border-2 border-primary justify-items-center">
-        <h1 className=" font-semibold italic ">File Name</h1>
-        <h1 className=" font-semibold italic">Last Modified</h1>
-        <h1 className="font-semibold italic">Size</h1>
-        <h1 className="font-semibold italic ">Owner</h1>
+        {["File Name", "Last Modified", "Size", "Owner"].map((header, index) => (
+          <h1 key={index} className="font-semibold italic">
+            {header}
+          </h1>
+        ))}
       </div>
       {/* TABLE Content */}
       <div className="rounded-b-lg border-2 border-t-0 border-primary bg-tablefontcolor">
