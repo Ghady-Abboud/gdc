@@ -32,15 +32,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col h-full w-full px-10 py-5 rounded-xl text-tablefontcolor">
-      {/* <div className="flex justify-start items-center mt-5 w-1/2">
-        <button
-          className="file text-xl text-center border-2 border-primary rounded-xl cursor-pointer px-2 py-1"
-          onClick={() => setUploadModalState(!uploadModalState)}
-        >
-          New
-        </button>
-        {uploadModalState && <FileUpload />}
-      </div> */}
+      
       <div className="my-10 text-3xl font-semibold text-fontcolor">
         My Files
       </div>

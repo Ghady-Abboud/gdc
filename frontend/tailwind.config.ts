@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         fontcolor: "var(--fontcolor)",
         tablefontcolor: "var(--tablefontcolor)",
+        customgray: "var(--customgray)",
       },
     },
   },

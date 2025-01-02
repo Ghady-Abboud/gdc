@@ -17,7 +17,7 @@ const SharedWithMe = () => {
   const username = "testing";
   return (
     <div className="grid grid-rows-[40%_60%] h-full w-full px-10 py-5 rounded-xl text-fontcolor">
-      <section className="flex flex-col h-full w-full border-2 border-primary justify-start items-center">
+      <section className="flex flex-col h-full w-full justify-start items-center">
         {/*Avatar Section*/}
         <div className="flex flex-row justify-evenly items-center mt-5 w-1/2">
           <Image
