@@ -42,7 +42,7 @@ const layout: React.FC<LayoutProps> = ({ children }) => {
         </ul>
         <div className="flex flex-1 flex-col justify-start items-center mt-20 w-full space-y-1">
           <button
-            className="flex justify-center items-center p-2 text-xl w-1/3 font-medium text-fontcolor bg-gradient-to-r from-background via-customgray to-background shadow-lg rounded-xl hover:cursor-pointer shadow-gray-800/50"
+            className="flex justify-center items-center p-2 text-xl w-1/3 font-medium text-fontcolor bg-gradient-to-r from-background via-customgray to-background shadow-md rounded-xl hover:cursor-pointer shadow-gray-800/50"
             type="button"
             onClick={() => setNewButtonState(!newButtonState)}
           >
