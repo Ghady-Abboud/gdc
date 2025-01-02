@@ -13,6 +13,7 @@ export default {
         fontcolor: "var(--fontcolor)",
         tablefontcolor: "var(--tablefontcolor)",
         customgray: "var(--customgray)",
+        modalbackground: "var(--modalbackground)",
       },
     },
   },

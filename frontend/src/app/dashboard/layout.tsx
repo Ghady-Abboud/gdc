@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import AppPage from "../../lib/routes/routes";
+import UploadFileModal from "../components/UploadFileModal";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,10 +18,16 @@ const relativeImages = [
 
 const layout: React.FC<LayoutProps> = ({ children }) => {
   const [newButtonState, setNewButtonState] = React.useState<boolean>(false);
-  const [uploadFileState, setUploadFileState] = React.useState<boolean>(false);
-  const [createFolderState, setCreateFolderState] =
+  const [uploadFileModal, setUploadFileModal] = React.useState<boolean>(false);
+  const [createFolderModal, setCreateFolderModal] =
     React.useState<boolean>(false);
   const router = useRouter();
+
+  const handleNewOptions = () => {
+    setNewButtonState(false);
+
+    setUploadFileModal(true);
+  };
 
   return (
     <div className="flex h-screen w-full text-regular">
@@ -71,7 +78,10 @@ const layout: React.FC<LayoutProps> = ({ children }) => {
             }`}
           >
             <ul className="flex flex-col justify-center items-center w-full bg-customgray rounded-lg shadow text-sm text-fontcolor">
-              <li className="flex justify-start w-full border-b border-gray-900/30 p-2 hover:cursor-pointer hover:bg-gray-800 hover:shadow-lg hover:rounded-xl">
+              <li
+                className="flex justify-start w-full border-b border-gray-900/30 p-2 hover:cursor-pointer hover:bg-gray-800 hover:shadow-lg hover:rounded-xl"
+                onClick={handleNewOptions}
+              >
                 <Image
                   src="/image/uploadfile.png"
                   alt="Upload File"
@@ -97,6 +107,11 @@ const layout: React.FC<LayoutProps> = ({ children }) => {
       <section className="flex flex-col h-screen w-5/6 justify-center items-center">
         {children}
       </section>
+
+      <UploadFileModal
+        isOpen={uploadFileModal}
+        onClose={() => setUploadFileModal(false)}
+      />
     </div>
   );
 };

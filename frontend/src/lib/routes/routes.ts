@@ -7,7 +7,7 @@ const AppPage = {
   STARRED: "/dashboard/starred",
   SHARED: "/dashboard/shared",
   TRASH: "/dashboard/trash",
-  UPLOAD: "/dashboard/upload",
+  UPLOADFILE: "/dashboard/upload",
 };
 
 export default AppPage;
