@@ -63,6 +63,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ type }) => {
         width={100}
         height={100}
         className="mb-5"
+        unoptimized
       />
       {type === "signin" && (
         <>

@@ -15,6 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           fill
           className="object-cover"
           priority
+          quality={100}
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center space-y-5 text-white bg-black bg-opacity-50">
           <h1 className="text-2xl font-bold">Manage Your Files the Best Way</h1>
